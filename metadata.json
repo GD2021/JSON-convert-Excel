@@ -1,0 +1,5 @@
+{
+  "name": "JSON 转 Excel",
+  "description": "An online tool to convert specific JSON data formats into Excel files with ease.",
+  "requestFramePermissions": []
+}
