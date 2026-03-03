@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# JSON 转 Excel 智能转换引擎
 
-# Run and deploy your AI Studio app
+一个专为商品数据设计的现代、极简、高效的在线 JSON 转 Excel 工具。支持自动识别格式、图片公式嵌入及动态列适配。
 
-This contains everything you need to run your app locally.
+## 📝 项目介绍
 
-View your app in AI Studio: https://ai.studio/apps/a6436938-d2b9-4e78-8b71-c3d2d87ad734
+本项目旨在解决商品抓取数据（如详情页数据、商品目录数据）转换为 Excel 时的繁琐过程。它能够智能识别 JSON 结构中的键值对，并将其映射为易读的中文表头，同时支持将图片链接直接转换为 Excel 的 `=IMAGE()` 公式，实现图片的自动加载。
 
-## Run Locally
+## ✨ 功能特性
 
-**Prerequisites:**  Node.js
+- **🚀 智能格式识别**：自动检测数据类型（目录数据、详情数据或自定义格式），并应用相应的表头映射。
+- **🖼️ 图片公式嵌入**：支持将图片链接转换为 Excel 的 `=IMAGE()` 公式，保持文件轻量且支持高清预览。
+- **📊 动态列适配**：不限制 JSON 的列数，自动获取所有唯一键名，确保数据零丢失。
+- **🎨 现代极简 UI**：采用柔和科技风格设计，支持拖拽上传、文本粘贴，提供流畅的用户体验。
+- **🔒 隐私优先**：所有数据处理均在用户浏览器本地完成，不会上传到任何服务器，确保商业数据安全。
+- **👁️ 实时预览**：在导出前提供数据预览表格，方便快速核对内容。
 
+## 🛠️ 技术栈
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **前端框架**：React 19
+- **开发语言**：TypeScript
+- **构建工具**：Vite
+- **样式处理**：Tailwind CSS 4
+- **动画效果**：Framer Motion
+- **图标系统**：Lucide React
+- **Excel 处理**：XLSX (SheetJS)
+
+## 📖 使用指南
+
+1. **导入数据**：将 `.json` 文件拖入上传区，或直接粘贴 JSON 字符串。
+2. **核对预览**：在预览表格中确认数据解析是否正确。
+3. **一键导出**：点击“导出 Excel”按钮，获取处理后的表格文件。
+4. **查看图片**：使用 Microsoft Excel 365 或 Excel 2021+ 打开文件，点击“启用编辑”即可自动加载图片。
+
+---
+
+*由智能数据转换引擎驱动。*
